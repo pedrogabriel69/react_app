@@ -1,17 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
-import Hello from './src/Hello';
+import CatalogContainer from './src/containers/CatalogContainer';
 
 ReactDOM.render(
-  <Hello />,
-  document.getElementById('root')
+  <CatalogContainer />,
+  document.getElementById('app')
 );
-
-import Calculation from './src/Calculation';
-
-let calc = new Calculation();
-calc.sum(10,2);
-calc.substraction(10,2);
-calc.multiplication(10,2);
-calc.division(10,2);
