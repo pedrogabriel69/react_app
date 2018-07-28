@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from './Image';
-import Textbox from './Textbox';
+import TextBox from './TextBox';
 import Price from './Price';
 
 const ProductCard = ({product}) => {
@@ -12,7 +12,7 @@ const ProductCard = ({product}) => {
         <Image src={imageUrl} alt={imageContext} height={imageHeight} width={imageWidth} />
       </div>
       <div className="text-box">
-        <Textbox context={product.context} />
+        <TextBox context={product.context} />
       </div>
       <div className="price-value">
         <Price priceValue={product.priceValue} />

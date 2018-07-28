@@ -11,9 +11,11 @@ class CatalogContainer extends Component {
   }
 
   render() {
+    const {products} = this.state;
+
     return (
       <div className="catalog-container">
-        <Catalog products={this.state.products} />
+        <Catalog products={products} />
       </div>
     );
   }
