@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from './Image';
-import TextBox from './TextBox';
+import TextBox from './Textbox';
 import Price from './Price';
 
 const ProductCard = ({product}) => {
@@ -20,6 +20,6 @@ const ProductCard = ({product}) => {
       <br/>
     </div>
   )
-}
+};
 
 export default ProductCard;

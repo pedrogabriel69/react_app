@@ -3,8 +3,8 @@ import ProductCard from './ProductCard';
 
 const Catalog = ({products}) => {
   const catalogItems = products.map((product) =>
-    <li>
-      <ProductCard key={product.id} product={product} />
+    <li key={product.id}>
+      <ProductCard product={product} />
     </li>
   );
 
