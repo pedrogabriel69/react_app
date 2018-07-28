@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Catalog from '../components/Catalog';
-import PRODUCTS from '../constants/Products';
+import PRODUCTS from '../constants/products';
 
 class CatalogContainer extends Component {
   constructor(props) {

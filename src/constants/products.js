@@ -4,7 +4,7 @@ const PRODUCTS = [
     context: 'APPLE',
     priceValue: '0.10',
     image: {
-      imageUrl: 'url_1',
+      imageUrl: 'https://storage.googleapis.com/zopnow-static/images/products/320/fresh-apple-red-delicious-v-500-g.png',
       imageContext: 'Organic/California',
       imageHeight: '50',
       imageWidth: '50'
@@ -15,7 +15,7 @@ const PRODUCTS = [
     context: 'BANANA',
     priceValue: '0.20',
     image: {
-      imageUrl: 'url_2',
+      imageUrl: 'http://www.granini.com/data/images/fruit_images/full/banana.png',
       imageContext: 'Organic/California',
       imageHeight: '50',
       imageWidth: '50'
@@ -26,7 +26,7 @@ const PRODUCTS = [
     context: 'ORANGE',
     priceValue: '0.30',
     image: {
-      imageUrl: 'url_3',
+      imageUrl: 'https://vignette.wikia.nocookie.net/the-super-babies/images/4/43/Orange.png/revision/latest?cb=20171117165349',
       imageContext: 'Organic/Florida',
       imageHeight: '50',
       imageWidth: '50'
