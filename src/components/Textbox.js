@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Textbox = ({context}) => (
+const TextBox = ({context}) => (
   <span>
     {`Item: ${context}`}
   </span>
 );
 
-export default Textbox;
+export default TextBox;
