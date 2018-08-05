@@ -1,7 +1,11 @@
 import React from 'react';
 
-const Image = ({src, alt, height, width}) => (
-  <img src={src} alt={alt} height={height} width={width} />
-);
+const Image = (props) => {
+  const { src, alt, height, width } = props;
+
+  return (
+    <img src={src} alt={alt} height={height} width={width} />
+  )
+};
 
 export default Image;

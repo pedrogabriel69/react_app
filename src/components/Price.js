@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Price = ({priceValue}) => (
-  <span>
-    {`Price: ${priceValue}$`}
-  </span>
-)
+const Price = (props) => {
+  const { priceValue } = props;
+
+  return (
+    <span>
+      {` - ${priceValue}$`}
+    </span>
+  )
+}
 
 export default Price;

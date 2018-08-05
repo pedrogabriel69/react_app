@@ -2,8 +2,10 @@ import React from 'react';
 import Image from './Image';
 import TextBox from './TextBox';
 import Price from './Price';
+import AddToBagButton from './AddToBagButton';
 
-const ProductCard = ({product}) => {
+const ProductCard = (props) => {
+  const { product } = props;
   const { imageUrl, imageContext, imageHeight, imageWidth } = product.image;
 
   return (
@@ -11,13 +13,11 @@ const ProductCard = ({product}) => {
       <div className="image">
         <Image src={imageUrl} alt={imageContext} height={imageHeight} width={imageWidth} />
       </div>
-      <div className="text-box">
+      <div className="textBoxPrice">
         <TextBox context={product.context} />
-      </div>
-      <div className="price-value">
         <Price priceValue={product.priceValue} />
       </div>
-      <br/>
+      <AddToBagButton product={product} />
     </div>
   )
 };

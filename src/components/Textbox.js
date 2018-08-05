@@ -1,9 +1,13 @@
 import React from 'react';
 
-const TextBox = ({context}) => (
-  <span>
-    {`Item: ${context}`}
-  </span>
-);
+const TextBox = (props) => {
+  const { context } = props;
+
+  return (
+    <span>
+      {context}
+    </span>
+  )
+}
 
 export default TextBox;
