@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import Catalog from '../components/Catalog';
 import PRODUCTS from '../constants/products';
+import { BagProvider } from './BagProvider';
+import Catalog from '../components/Catalog';
+import Bag from '../components/Bag';
 
 class CatalogContainer extends Component {
   constructor(props) {
@@ -11,12 +13,18 @@ class CatalogContainer extends Component {
   }
 
   render() {
-    const {products} = this.state;
+    const { products } = this.state;
 
     return (
-      <div className="catalog-container">
-        <Catalog products={products} />
-      </div>
+      <BagProvider>
+        <div className="CatalogContainer">
+          <h2>Products</h2>
+          <Catalog products={products} />
+        </div>
+        <div className="bag">
+          <Bag />
+        </div>
+      </BagProvider>
     );
   }
 }
