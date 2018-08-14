@@ -3,6 +3,8 @@ import Image from './Image';
 import TextBox from './TextBox';
 import Price from './Price';
 import AddToBagButton from './AddToBagButton';
+import Link from './Link';
+import { productPath } from '../helpers/routes';
 
 const ProductCard = (props) => {
   const { product } = props;
@@ -14,7 +16,14 @@ const ProductCard = (props) => {
         <Image src={imageUrl} alt={imageContext} height={imageHeight} width={imageWidth} />
       </div>
       <div className="textBoxPrice">
-        <TextBox context={product.context} />
+        <Link to={{
+          pathname: productPath(product.id),
+          state: {
+            product: product
+          }
+        }}>
+          <TextBox context={product.context} />
+        </Link>
         <Price priceValue={product.priceValue} />
       </div>
       <AddToBagButton product={product} />

@@ -1,5 +1,5 @@
 import React from 'react';
-import TextBox from './TextBox';
+import TextBox from '../TextBox';
 
 const BagItem = (props) => {
   const { item } = props;

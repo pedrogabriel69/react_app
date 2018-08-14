@@ -1,5 +1,5 @@
 import React from 'react';
-import { BagContext } from '../containers/BagProvider';
+import { BagContext } from '../../containers/BagProvider';
 import BagItem from './BagItem';
 import BagTotal from './BagTotal';
 

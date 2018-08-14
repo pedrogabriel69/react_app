@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+
 import PRODUCTS from '../constants/products';
-import { BagProvider } from './BagProvider';
-import Catalog from '../components/Catalog';
-import Bag from '../components/Bag';
+import Catalog from '../components/views/Catalog';
+import Bag from '../components/views/Bag';
 
 class CatalogContainer extends Component {
   constructor(props) {
@@ -16,15 +16,14 @@ class CatalogContainer extends Component {
     const { products } = this.state;
 
     return (
-      <BagProvider>
+      <div>
         <div className="CatalogContainer">
-          <h2>Products</h2>
           <Catalog products={products} />
         </div>
         <div className="bag">
           <Bag />
         </div>
-      </BagProvider>
+      </div>
     );
   }
 }
