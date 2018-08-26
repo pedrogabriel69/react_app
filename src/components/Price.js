@@ -5,7 +5,7 @@ const Price = (props) => {
 
   return (
     <span>
-      {` - ${priceValue}$`}
+      {` ${priceValue}$`}
     </span>
   )
 }

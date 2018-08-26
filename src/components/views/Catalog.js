@@ -1,19 +1,26 @@
 import React from 'react';
+
 import ProductCard from '../ProductCard';
+import Bag from './Bag';
+
+import { Container, Row, Col } from 'reactstrap';
 
 const Catalog = (props) => {
-  const { products } = props;
-  const catalogItems = products.map((product) =>
-    <li key={product.id}>
-      <ProductCard product={product} />
-      <br/>
-    </li>
+  const { items } = props;
+  const catalogItems = items.map((product) =>
+    <Col sm="4" key={product.fields.id}>
+      <ProductCard product={product.fields} />
+    </Col>
   );
 
   return (
-    <ul>
-      {catalogItems}
-    </ul>
+    <Container>
+      <Bag />
+      <br />
+      <Row>
+        {catalogItems}
+      </Row>
+    </Container>
   )
 };
 

@@ -17,7 +17,7 @@ const Bag = () => {
               ))
             ) : (
               <p>
-                Your Bag is empty.
+                Your Cart is empty.
               </p>
             )}
           </div>
